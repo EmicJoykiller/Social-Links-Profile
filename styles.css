@@ -2,7 +2,87 @@
     box-sizing: border-box;
 }
 
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --white-transparent: hsla(0, 0%, 100%, 0.8);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900:hsl(0, 0%, 8%);
+}
+
 body,html{
     margin: 0;
     padding: 0;
+    background-color: var(--Grey-900);
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.site-wraper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Grey-800);
+    border-radius: 10px;
+    padding: 1rem 1rem 2.5rem;
+    gap: 1.5rem;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.profile img{
+    width: 25%;
+    border-radius: 50%;
+    margin: 1rem ;
+    
+}
+
+.profile h1 {
+    margin: 0.05rem 0; 
+    color: var(--White);
+}
+
+.profile h5 {
+    margin-top: 0.5rem ;
+    color: var(--Green); 
+}
+
+.profile p {
+    margin: 0.5rem ; 
+    color: var(--white-transparent);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.links{
+    color: var(--White);
+    
+}
+
+.links ul{
+    list-style-type: none;
+    
+}
+
+.links a{
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 700;
 }
